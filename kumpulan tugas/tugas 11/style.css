@@ -1,0 +1,143 @@
+/* ===============================
+   2.1 SETUP DASAR (RESET)
+================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    padding: 20px;
+}
+
+/* ===============================
+   2.2 FORM CONTAINER
+================================ */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: rgb(7, 238, 57);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   JUDUL FORM
+================================ */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ===============================
+   2.12 LAYOUT FORM
+================================ */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* ===============================
+   2.3 LABEL STYLING
+================================ */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4b4f56;
+}
+
+/* ===============================
+   2.4 INPUT, SELECT, TEXTAREA
+================================ */
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* ===============================
+   2.5 FOCUS STATE
+================================ */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 4px rgba(24, 119, 242, 0.1);
+}
+
+/* ===============================
+   2.11 VALIDATION
+================================ */
+.form-input:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+}
+
+.form-input:valid:not(:placeholder-shown) {
+    border-color: #2ecc71;
+}
+
+/* ===============================
+   RADIO BUTTON
+================================ */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* ===============================
+   2.9 BUTTON STYLING
+================================ */
+.form-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-button:hover {
+    background-color: #166fe5;
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}
+
+/* ===============================
+   2.13 RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-container {
+        margin: 10px;
+        padding: 20px;
+    }
+}
