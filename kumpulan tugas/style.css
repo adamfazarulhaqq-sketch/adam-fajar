@@ -1,0 +1,53 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* BACKGROUND HALAMAN */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3e7ff, #e0c3fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER MENU TUGAS */
+.menu-tugas {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+/* TOMBOL TUGAS */
+.cta-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #f5e9ff;
+    border: 2px solid purple;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cta-button:hover {
+    background: purple;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(128, 0, 128, 0.4);
+}
+
+/* ACTIVE (KETIKA DIKLIK) */
+.cta-button:active {
+    transform: scale(0.97);
+}
