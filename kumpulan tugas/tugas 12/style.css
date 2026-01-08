@@ -1,0 +1,139 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5b6cff;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #5b6cff;
+}
+
+/* DROPDOWN */
+.dropdown .submenu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: #ffffff;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu a {
+    display: block;
+    padding: 12px 18px;
+    color: #444;
+    transition: background 0.3s;
+}
+
+.submenu a:hover {
+    background: #f0f2ff;
+    color: #5b6cff;
+}
+
+/* BUTTON CTA */
+.cta {
+    text-decoration: none;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #5b6cff, #7f8cff);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(91,108,255,0.4);
+}
+
+/* KONTEN */
+main {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+main h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
