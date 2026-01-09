@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Reservasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Form Reservasi</h1>
+
+    <form>
+        <!-- Nama Lengkap -->
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <!-- Email -->
+        <label>Email</label>
+        <input type="email" name="email" placeholder="contoh@email.com" required>
+
+        <!-- Nomor HP -->
+        <label>Nomor HP</label>
+        <input type="tel" name="hp" placeholder="08xxxxxxxxxx" required>
+
+        <!-- Tanggal Reservasi -->
+        <label>Tanggal Reservasi</label>
+        <input type="date" name="tanggal">
+
+        <!-- Jam Reservasi -->
+        <label>Jam Reservasi</label>
+        <input type="time" name="jam">
+
+        <!-- Jenis Program -->
+        <label>Jenis Program</label>
+        <select name="program">
+            <option value="">-- Pilih Program --</option>
+            <option value="basic">Program Basic</option>
+            <option value="premium">Program Premium</option>
+            <option value="vip">Program VIP</option>
+        </select>
+
+        <!-- Pilih Cabang -->
+        <label>Pilih Cabang</label>
+        <select name="cabang">
+            <option value="">-- Pilih Cabang --</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="bandung">Bandung</option>
+        </select>
+
+        <!-- Catatan Khusus -->
+        <label>Catatan Khusus</label>
+        <textarea name="catatan" placeholder="Tuliskan permintaan khusus jika ada..."></textarea>
+
+        <!-- Checkbox Konfirmasi -->
+        <div class="checkbox">
+            <input type="checkbox" required>
+            <span>Saya memastikan data yang saya isi sudah benar</span>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Kirim Reservasi</button>
+    </form>
+
+    <!-- FAQ -->
+    <div class="faq">
+        <h2>FAQ (Pertanyaan Umum)</h2>
+
+        <div class="faq-item">
+            <h4>1. Apakah reservasi bisa dibatalkan?</h4>
+            <p>Ya, reservasi dapat dibatalkan maksimal 1 hari sebelum jadwal.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>2. Apakah reservasi gratis?</h4>
+            <p>Reservasi gratis, pembayaran dilakukan di tempat.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>3. Apakah bisa mengganti jadwal?</h4>
+            <p>Bisa, silakan hubungi admin untuk perubahan jadwal.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
