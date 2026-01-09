@@ -1,230 +1,146 @@
 /* =========================
-   RESET & GLOBAL
+   RESET
 ========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* =========================
+   BODY
+========================= */
 body {
-    background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
-    color: #eaeaea;
-    line-height: 1.6;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.9);
-    border-bottom: 2px solid #ff2a2a;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 15px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111827, #1f2933);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.brand {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #ff2a2a;
-}
-
-.nav-links a {
-    margin-left: 18px;
-    text-decoration: none;
-    color: #eaeaea;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ff2a2a;
+    padding: 30px;
+    color: #e5e7eb;
 }
 
 /* =========================
-   HEADER / HERO
-========================= */
-header {
-    padding-top: 120px;
-    padding-bottom: 60px;
-    text-align: center;
-}
-
-.logo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ff2a2a;
-    margin-bottom: 15px;
-}
-
-header h1 {
-    font-size: 32px;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-
-header p {
-    color: #ccc;
-    font-style: italic;
-}
-
-/* =========================
-   NAV SECONDARY
-========================= */
-nav {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-nav a {
-    margin: 0 12px;
-    color: #aaa;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ff2a2a;
-}
-
-/* =========================
-   CONTENT
+   CONTAINER
 ========================= */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
-.section-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    border-left: 5px solid #ff2a2a;
-    padding-left: 10px;
-    text-transform: uppercase;
+    width: 100%;
+    max-width: 600px;
+    background-color: #020617;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 /* =========================
-   ABOUT
+   JUDUL
 ========================= */
-#about p {
-    color: #ccc;
-}
-
-/* =========================
-   SKILLS
-========================= */
-.skill-list {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.skill-list li {
-    background: #1f1f1f;
-    border: 1px solid #ff2a2a;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-.project-card {
-    background: #141414;
-    border-left: 4px solid #ff2a2a;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateX(6px);
-    background: #1c1c1c;
-}
-
-.project-card h3 {
-    margin-bottom: 8px;
-    color: #ff2a2a;
-}
-
-.project-card p {
-    color: #ccc;
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 8px 18px;
-    background: #ff2a2a;
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #fff;
-    color: #000;
-}
-
-/* =========================
-   CONTACT
-========================= */
-#contact p {
-    color: #ccc;
-    margin-bottom: 6px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
+.judul {
     text-align: center;
-    padding: 20px;
-    background: #000;
-    color: #888;
-    margin-top: 40px;
-    border-top: 2px solid #ff2a2a;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* =========================
-   RESPONSIVE
+   FORM
 ========================= */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-    }
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #c7d2fe;
+}
 
-    .nav-links a {
-        margin: 0 8px;
-        font-size: 13px;
-    }
+form input,
+form select,
+form textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    background-color: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    color: #e5e7eb;
+    font-size: 14px;
+}
 
-    .skill-list {
-        justify-content: center;
-    }
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+/* TEXTAREA */
+form textarea {
+    min-height: 90px;
+    resize: none;
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #38bdf8;
+    color: #020617;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0ea5e9;
+}
+
+/* =========================
+   FAQ
+========================= */
+.faq {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #38bdf8;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+}
+
+.faq-item h4 {
+    font-size: 14px;
+    color: #a5b4fc;
+    margin-bottom: 4px;
+}
+
+.faq-item p {
+    font-size: 13px;
+    color: #cbd5f5;
 }
